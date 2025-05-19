@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <span className="text-2xl font-bold text-gradient">Dead Lead Phoenix</span>
-            <span className="ml-2 text-white font-bold hidden sm:inline-block">Dead Lead Phoenix</span>
+            
           </div>
           
           {/* Desktop Navigation */}
