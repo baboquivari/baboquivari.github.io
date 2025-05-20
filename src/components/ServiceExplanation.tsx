@@ -88,7 +88,7 @@ const ServiceExplanation = () => {
             onClick={() => document.querySelector('#book-a-demo')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-dlp-purple hover:bg-dlp-purple/90 text-white py-6 px-8 rounded-md text-lg"
           >
-            Book Your Free Demo
+            Get Your Free Lead Analysis
           </Button>
         </div>
       </div>
