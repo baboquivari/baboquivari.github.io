@@ -38,7 +38,7 @@ const LogoCarousel = () => {
               <img 
                 src={logo.url}
                 alt={logo.name}
-                className={`${logo.className} brightness-[.8]`}
+                className={`${logo.className} brightness-[.8] hover:brightness-[1] transition-all duration-300`}
               />
             </div>
           ))}
