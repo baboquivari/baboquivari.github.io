@@ -10,32 +10,32 @@ import {
 const Features = () => {
   const features = [
     {
-      icon: <Database className="w-8 h-8 text-dlp-cyan" />,
+      icon: <Database className="w-8 h-8 text-dlp-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />,
       title: "Cost Efficiency",
       description: "Cut lead generation expenses and improve your marketing effectiveness."
     },
     {
-      icon: <Star className="w-8 h-8 text-dlp-cyan" />,
+      icon: <Star className="w-8 h-8 text-dlp-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />,
       title: "Improved Customer Engagement",
       description: "Deliver personalized customer experiences that your customers love."
     },
     {
-      icon: <TrendingUp className="w-8 h-8 text-dlp-cyan" />,
+      icon: <TrendingUp className="w-8 h-8 text-dlp-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />,
       title: "Increased Revenue",
       description: "Tap into new revenue streams and expand your businesses growth."
     },
     {
-      icon: <Users className="w-8 h-8 text-dlp-cyan" />,
+      icon: <Users className="w-8 h-8 text-dlp-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />,
       title: "Scalability Without Expanding Staff",
       description: "Engage thousands of leads without adding staff."
     },
     {
-      icon: <Eye className="w-8 h-8 text-dlp-cyan" />,
+      icon: <Eye className="w-8 h-8 text-dlp-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />,
       title: "Enhanced Customer Insights",
       description: "Get valuable customer insights to inform your business decisions."
     },
     {
-      icon: <Award className="w-8 h-8 text-dlp-cyan" />,
+      icon: <Award className="w-8 h-8 text-dlp-cyan drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />,
       title: "Gain Competitive Advantage",
       description: "Stay ahead of the competition with innovative customer engagement strategies."
     }
