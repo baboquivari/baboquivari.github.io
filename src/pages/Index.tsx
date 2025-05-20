@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import LogoCarousel from "../components/LogoCarousel";
 import SocialProof from "../components/SocialProof";
 import Testimonials from "../components/Testimonials";
 import Features from "../components/Features";
@@ -15,7 +14,6 @@ const Index = () => {
     <div className="min-h-screen bg-dlp-dark">
       <Navbar />
       <Hero />
-      <LogoCarousel />
       <SocialProof />
       <Testimonials />
       <Features />
