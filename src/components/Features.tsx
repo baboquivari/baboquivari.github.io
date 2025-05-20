@@ -1,6 +1,6 @@
 
 import { 
-  Bank, 
+  Database, 
   Star, 
   TrendingUp, 
   Users, 
@@ -11,7 +11,7 @@ import {
 const Features = () => {
   const features = [
     {
-      icon: <Bank className="w-8 h-8 text-dlp-cyan" />,
+      icon: <Database className="w-8 h-8 text-dlp-cyan" />,
       title: "Cost Efficiency",
       description: "Cut lead generation expenses and improve your marketing effectiveness."
     },
