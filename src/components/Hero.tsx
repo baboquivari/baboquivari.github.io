@@ -5,6 +5,20 @@ const Hero = () => {
     <div className="relative min-h-screen flex items-center bg-dlp-dark pt-24 md:pt-0 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
+        {/* Mesh Grid Background */}
+        <div 
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, rgba(110,68,255,0.1) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(110,68,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '64px 64px',
+            transform: 'perspective(500px) rotateX(60deg) translateY(-50%)',
+            maskImage: 'linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)'
+          }}
+        />
+
         {/* Gradient overlays */}
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,_rgba(110,68,255,0.15),_transparent_60%)]"></div>
         <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,_rgba(0,212,255,0.15),_transparent_60%)]"></div>
@@ -14,13 +28,14 @@ const Hero = () => {
         <div className="absolute bottom-20 right-[10%] w-64 h-64 rounded-full bg-dlp-cyan/5 blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         
         {/* Dot pattern */}
-        <div className="absolute inset-0 opacity-[0.15]" 
+        <div 
+          className="absolute inset-0 opacity-[0.15]" 
           style={{ 
             backgroundImage: 'radial-gradient(circle at center, rgba(110,68,255,0.1) 2px, transparent 2px)', 
             backgroundSize: '40px 40px',
             maskImage: 'linear-gradient(to bottom, transparent, black, transparent)'
-          }}>
-        </div>
+          }}
+        />
       </div>
       
       <div className="container mx-auto px-4 z-10">
@@ -171,7 +186,8 @@ const Hero = () => {
               </div>
 
               {/* Scanning Effect */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 to-transparent h-32 animate-scan" 
+              <div 
+                className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 to-transparent h-32 animate-scan" 
                 style={{ 
                   animation: 'scan 3s linear infinite',
                   backgroundSize: '100% 100%',
