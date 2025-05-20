@@ -27,8 +27,6 @@ const LogoCarousel = () => {
   return (
     <div className="bg-dlp-darker py-12">
       <div className="container mx-auto px-4">
-        <h3 className="text-center text-lg text-gray-400 mb-8">Trusted by industry leaders</h3>
-        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center max-w-4xl mx-auto">
           {logos.map((logo, index) => (
             <div 
