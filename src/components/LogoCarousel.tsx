@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
 const LogoCarousel = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
   const logos = [
     {
       url: "https://frost-lark-9ff.notion.site/image/attachment%3A80ad724d-0cf7-443b-905f-ebb97dbe793f%3Ahilltribe-logo-no-bg.png?table=block&id=1f9412d3-850f-806c-820f-ca9821b539be&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2",
@@ -25,14 +23,6 @@ const LogoCarousel = () => {
       width: 140
     }
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScrollPosition((prev) => (prev + 1) % (logos.length * 2));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [logos.length]);
 
   return (
     <div className="section bg-dlp-darker py-12">
