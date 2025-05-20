@@ -1,10 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const LogoCarousel = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const carouselRef = useRef(null);
   
   useEffect(() => {
-    setIsVisible(true);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+    if (carouselRef.current) {
+      observer.observe(carouselRef.current);
+    }
+
+    return () => observer.disconnect();
   }, []);
 
   const logos = [
@@ -31,7 +48,7 @@ const LogoCarousel = () => {
   ];
 
   return (
-    <div className="section bg-dlp-darker py-12">
+    <div className="section bg-dlp-darker py-12" ref={carouselRef}>
       <div className="container mx-auto">
         <div className="relative overflow-hidden">
           <div className="flex items-center justify-center gap-12 md:gap-24">
