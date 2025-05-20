@@ -7,7 +7,7 @@ const BookDemo = () => {
           <p className="text-xl text-gray-300 mb-4">
             See how Dead Lead Phoenix can transform your dormant leads into revenue
           </p>
-          <p className="text-lg text-dlp-cyan mb-8">
+          <p className="text-lg text-gray-400 mb-8">
             Or reach out directly: toni@deadleadphoenix.com
           </p>
           
