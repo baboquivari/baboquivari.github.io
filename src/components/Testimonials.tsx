@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 interface Testimonial {
@@ -11,22 +10,22 @@ interface Testimonial {
 const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
-      quote: "Dead Lead Phoenix took our coldest leads and turned them into our hottest opportunities. The ROI was immediate and substantial.",
-      author: "Alex Morgan",
-      position: "CMO",
-      company: "TechAdvance Inc."
+      quote: "Dead Lead Phoenix reactivated leads we thought were gone for good. Sales jumped 35% in just six weeks!",
+      author: "Jenna Armitage",
+      position: "Senior Marketing Executive",
+      company: "Invenia"
     },
     {
-      quote: "We had thousands of leads going nowhere. DLP's reactivation strategy recovered 26% of them, generating over $430K in new business.",
-      author: "Sarah Chen",
-      position: "Director of Sales",
-      company: "GrowthMatrix"
+      quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $7,000 from previously unresponsive leads.",
+      author: "Lina Tszyan",
+      position: "Founder",
+      company: "Hill Tribe Silver"
     },
     {
-      quote: "Their process is transparent, efficient, and effective. We've made DLP a permanent part of our marketing strategy.",
-      author: "Marcus Johnson",
-      position: "CEO",
-      company: "Elevate Solutions"
+      quote: "We had thousands of dead leads just gathering dust. DLP turned them into instant revenue, helping us close deals effortlessly.",
+      author: "Dan Emmett",
+      position: "Owner",
+      company: "Yorkshire Electric Gates"
     }
   ];
 
