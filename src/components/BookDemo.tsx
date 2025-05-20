@@ -8,7 +8,7 @@ const BookDemo = () => {
             See how Dead Lead Phoenix can transform your dormant leads into revenue
           </p>
           <p className="text-lg text-gray-400 mb-8">
-            Or reach out directly: toni@deadleadphoenix.com
+            Or reach out directly to toni@deadleadphoenix.com
           </p>
           
           <div className="tech-card p-8 relative">
