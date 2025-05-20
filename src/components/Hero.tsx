@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <h1 className="text-[3.5rem] md:text-6xl lg:text-7xl font-bold mb-6 pt-16 md:pt-0">
               <span className="block mb-2 text-white">Hidden Revenue</span> 
               <span className="text-dlp-purple">— Unlocked</span>
             </h1>
