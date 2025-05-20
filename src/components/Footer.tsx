@@ -8,7 +8,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Dead Lead Phoenix</h3>
             <p className="text-gray-400">
-              AI-powered reactivation campaigns on autopilot. Turn dead leads into fresh revenue.
+              AI-powered reactivation campaigns on autopilot.<br />
+              Turn dead leads into fresh revenue.
             </p>
           </div>
           
