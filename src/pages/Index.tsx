@@ -8,6 +8,7 @@ import Pricing from "../components/Pricing";
 import FAQ from "../components/FAQ";
 import BookDemo from "../components/BookDemo";
 import Footer from "../components/Footer";
+import LogoCarousel from "../components/LogoCarousel";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <SocialProof />
+      <LogoCarousel />
       <Testimonials />
       <Features />
       <ServiceExplanation />
