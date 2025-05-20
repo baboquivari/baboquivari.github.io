@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -6,21 +5,18 @@ interface PricingFeature {
   name: string;
   basic: boolean;
   premium: boolean;
-  enterprise: boolean;
 }
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
   
   const features: PricingFeature[] = [
-    { name: "Lead Database Analysis", basic: true, premium: true, enterprise: true },
-    { name: "Custom Re-engagement Emails", basic: true, premium: true, enterprise: true },
-    { name: "A/B Testing", basic: false, premium: true, enterprise: true },
-    { name: "Multi-channel Follow-up", basic: false, premium: true, enterprise: true },
-    { name: "Advanced Lead Scoring", basic: false, premium: false, enterprise: true },
-    { name: "Campaign Performance Dashboard", basic: true, premium: true, enterprise: true },
-    { name: "Dedicated Account Manager", basic: false, premium: true, enterprise: true },
-    { name: "Strategy Consulting", basic: false, premium: false, enterprise: true },
+    { name: "Lead Database Analysis", basic: true, premium: true },
+    { name: "Custom Re-engagement Emails", basic: true, premium: true },
+    { name: "A/B Testing", basic: false, premium: true },
+    { name: "Multi-channel Follow-up", basic: false, premium: true },
+    { name: "Campaign Performance Dashboard", basic: true, premium: true },
+    { name: "Dedicated Account Manager", basic: false, premium: true },
   ];
 
   const plans = [
@@ -39,15 +35,7 @@ const Pricing = () => {
       annualPrice: 1797,
       ctaText: "Start Premium",
       highlighted: true,
-    },
-    {
-      name: "Enterprise",
-      description: "For established companies with 15,000+ dormant leads.",
-      monthlyPrice: "Custom",
-      annualPrice: "Custom",
-      ctaText: "Contact Us",
-      highlighted: false,
-    },
+    }
   ];
   
   return (
@@ -84,7 +72,7 @@ const Pricing = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {plans.map((plan, index) => (
             <div 
               key={plan.name} 
@@ -104,27 +92,19 @@ const Pricing = () => {
               <p className="text-gray-400 mb-6">{plan.description}</p>
               
               <div className="mb-6">
-                {typeof plan.monthlyPrice === "number" ? (
-                  <div className="flex items-end">
-                    <span className="text-4xl font-bold">
-                      ${billingCycle === "monthly" ? plan.monthlyPrice : plan.annualPrice}
-                    </span>
-                    <span className="text-gray-400 ml-1">/month</span>
-                  </div>
-                ) : (
-                  <div className="text-4xl font-bold text-gradient">
-                    {plan.monthlyPrice}
-                  </div>
-                )}
+                <div className="flex items-end">
+                  <span className="text-4xl font-bold">
+                    ${billingCycle === "monthly" ? plan.monthlyPrice : plan.annualPrice}
+                  </span>
+                  <span className="text-gray-400 ml-1">/month</span>
+                </div>
               </div>
               
               <ul className="mb-8 space-y-3">
                 {features.map((feature) => {
                   const isIncluded = plan.name === "Basic" 
                     ? feature.basic 
-                    : plan.name === "Premium" 
-                      ? feature.premium 
-                      : feature.enterprise;
+                    : feature.premium;
                       
                   return (
                     <li 
