@@ -62,18 +62,16 @@ const Hero = () => {
                     <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
                   </div>
 
-                  {/* Regular Rows */}
-                  {Array.from({ length: 3 }).map((_, i) => (
-                    <div key={i} className="h-8 flex gap-[2px] opacity-40">
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                    </div>
-                  ))}
+                  {/* Regular Row */}
+                  <div className="h-8 flex gap-[2px] opacity-40">
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                  </div>
 
                   {/* Active Row 2 */}
-                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '2s' }}>
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '1.5s' }}>
                     <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
                     <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
                     <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
@@ -82,15 +80,79 @@ const Hero = () => {
                     <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
                   </div>
 
-                  {/* More Regular Rows */}
-                  {Array.from({ length: 7 }).map((_, i) => (
-                    <div key={i} className="h-8 flex gap-[2px] opacity-40">
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
-                      <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                  {/* Regular Row */}
+                  <div className="h-8 flex gap-[2px] opacity-40">
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                  </div>
+
+                  {/* Active Row 3 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '2s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$15,200</span>
                     </div>
-                  ))}
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
+
+                  {/* Regular Row */}
+                  <div className="h-8 flex gap-[2px] opacity-40">
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                  </div>
+
+                  {/* Active Row 4 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '2.5s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$9,800</span>
+                    </div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
+
+                  {/* Regular Row */}
+                  <div className="h-8 flex gap-[2px] opacity-40">
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                  </div>
+
+                  {/* Active Row 5 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '3s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$11,350</span>
+                    </div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
+
+                  {/* Active Row 6 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '3.5s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$13,600</span>
+                    </div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
+
+                  {/* Active Row 7 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '4s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$10,900</span>
+                    </div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
                 </div>
               </div>
 
