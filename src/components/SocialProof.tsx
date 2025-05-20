@@ -67,9 +67,11 @@ const SocialProof = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           <div className="tech-card p-8 text-center">
-            <Counter end={50} suffix="%" delay={200} />
+            <div className="text-4xl md:text-5xl font-bold text-gradient animate-glow">
+              30-50%
+            </div>
             <p className="mt-4 text-gray-300 text-lg">
-              Up to 50% response rate
+              Average response rates
             </p>
           </div>
           
