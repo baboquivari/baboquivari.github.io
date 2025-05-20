@@ -4,32 +4,32 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center bg-dlp-dark pt-24 md:pt-0 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0">
         {/* Mesh Grid Background */}
         <div 
-          className="absolute inset-0 opacity-[0.07]"
+          className="absolute inset-0 opacity-[0.07] z-[1]"
           style={{
             backgroundImage: `
               linear-gradient(to right, rgba(110,68,255,0.1) 1px, transparent 1px),
               linear-gradient(to bottom, rgba(110,68,255,0.1) 1px, transparent 1px)
             `,
             backgroundSize: '64px 64px',
-            transform: 'perspective(500px) rotateX(60deg) translateY(-50%)',
+            transform: 'perspective(500px) rotateX(60deg) translateY(-20%)',
             maskImage: 'linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%)'
           }}
         />
 
         {/* Gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,_rgba(110,68,255,0.15),_transparent_60%)]"></div>
-        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,_rgba(0,212,255,0.15),_transparent_60%)]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,_rgba(110,68,255,0.15),_transparent_60%)] z-[2]"></div>
+        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,_rgba(0,212,255,0.15),_transparent_60%)] z-[2]"></div>
         
         {/* Abstract shapes */}
-        <div className="absolute top-20 left-[10%] w-64 h-64 rounded-full bg-dlp-purple/5 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-[10%] w-64 h-64 rounded-full bg-dlp-cyan/5 blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-[10%] w-64 h-64 rounded-full bg-dlp-purple/5 blur-3xl animate-pulse z-[1]"></div>
+        <div className="absolute bottom-20 right-[10%] w-64 h-64 rounded-full bg-dlp-cyan/5 blur-3xl animate-pulse z-[1]" style={{ animationDelay: '1s' }}></div>
         
         {/* Dot pattern */}
         <div 
-          className="absolute inset-0 opacity-[0.15]" 
+          className="absolute inset-0 opacity-[0.15] z-[1]" 
           style={{ 
             backgroundImage: 'radial-gradient(circle at center, rgba(110,68,255,0.1) 2px, transparent 2px)', 
             backgroundSize: '40px 40px',
