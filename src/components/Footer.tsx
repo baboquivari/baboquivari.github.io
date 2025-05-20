@@ -15,8 +15,22 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-medium mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-dlp-cyan transition-colors">Pricing</a></li>
-              <li><a href="mailto:toni@deadleadphoenix.com" className="text-gray-400 hover:text-dlp-cyan transition-colors">Contact</a></li>
+              <li>
+                <button 
+                  onClick={() => document.querySelector('#simple-transparent-pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-400 hover:text-dlp-cyan transition-colors"
+                >
+                  Pricing
+                </button>
+              </li>
+              <li>
+                <a 
+                  href="mailto:toni@deadleadphoenix.com" 
+                  className="text-gray-400 hover:text-dlp-cyan transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           
