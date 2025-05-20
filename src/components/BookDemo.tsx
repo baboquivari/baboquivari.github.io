@@ -8,15 +8,17 @@ const BookDemo = () => {
             See how Dead Lead Phoenix can transform your dormant leads into revenue
           </p>
           
-          <div className="tech-card p-8">
-            <iframe
-              src="https://cal.com/tonisian/dead-lead-phoenix-20-min-demo"
-              width="100%"
-              height="600px"
-              frameBorder="0"
-              title="Schedule a demo"
-              className="rounded-lg"
-            />
+          <div className="tech-card p-8 relative">
+            <div className="relative z-[60]">
+              <iframe
+                src="https://cal.com/tonisian/dead-lead-phoenix-20-min-demo"
+                width="100%"
+                height="600px"
+                frameBorder="0"
+                title="Schedule a demo"
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
