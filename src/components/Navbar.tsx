@@ -1,8 +1,11 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -16,13 +19,17 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-dlp-darker/90 backdrop-blur-md py-3 shadow-lg" : "bg-transparent py-6"}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-gradient">Dead Lead Phoenix</span>
-            
+            <img 
+              src="/lovable-uploads/c50aa04b-4317-453d-bff2-7018bafc3c72.png" 
+              alt="Dead Lead Phoenix Logo" 
+              className="h-12 md:h-14"
+            />
           </div>
           
           {/* Desktop Navigation */}
@@ -62,4 +69,5 @@ const Navbar = () => {
       </div>
     </header>;
 };
+
 export default Navbar;
