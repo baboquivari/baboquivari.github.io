@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import * as React from "react"
 
 interface CounterProps {
   end: number;
@@ -74,7 +74,7 @@ const SocialProof = () => {
           </div>
           
           <div className="tech-card p-8 text-center">
-            <Counter end={25} prefix="" suffix="" delay={200} />
+            <span className="text-4xl md:text-5xl font-bold text-dlp-purple">$0.25</span>
             <p className="mt-4 text-gray-300 text-lg">
               Cost per re-activated dollar
             </p>
