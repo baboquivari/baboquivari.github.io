@@ -8,31 +8,29 @@ interface PricingFeature {
 }
 
 const Pricing = () => {
-  const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
-  
   const features: PricingFeature[] = [
     { name: "Lead Database Analysis", basic: true, premium: true },
-    { name: "Custom Re-engagement Emails", basic: true, premium: true },
-    { name: "A/B Testing", basic: false, premium: true },
-    { name: "Multi-channel Follow-up", basic: false, premium: true },
+    { name: "Whatsapp or Email Campaign", basic: true, premium: true },
+    { name: "Personalized Outreach", basic: true, premium: true },
     { name: "Campaign Performance Dashboard", basic: true, premium: true },
-    { name: "Dedicated Account Manager", basic: false, premium: true },
+    { name: "Human Handoff", basic: true, premium: true },
+    { name: "25% revenue share on cash collected (1st invoice only)", basic: true, premium: true },
+    { name: "Guaranteed refund of setup fee if service doesn't recover at least $500 in 45 days", basic: true, premium: true },
+    { name: "We cover all expenses: send credits, system costs, campaign tech — no hidden costs", basic: true, premium: true },
   ];
 
   const plans = [
     {
-      name: "Basic",
-      description: "Perfect for small businesses with up to 5,000 dormant leads.",
-      monthlyPrice: 997,
-      annualPrice: 897,
+      name: "One Time Setup Fee + 25% Revenue Share",
+      description: "Teams that want skin in the game and a hard ROI guarantee.",
+      price: 500,
       ctaText: "Start Basic",
       highlighted: false,
     },
     {
       name: "Premium",
       description: "Ideal for growing businesses with up to 15,000 dormant leads.",
-      monthlyPrice: 1997,
-      annualPrice: 1797,
+      price: 1997,
       ctaText: "Start Premium",
       highlighted: true,
     }
@@ -45,32 +43,6 @@ const Pricing = () => {
         <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12">
           Choose the plan that fits your needs. All plans include our core lead resurrection technology.
         </p>
-        
-        <div className="flex justify-center mb-12">
-          <div className="bg-gray-800/50 rounded-full p-1 inline-flex">
-            <button
-              onClick={() => setBillingCycle("monthly")}
-              className={`px-6 py-2 rounded-full text-sm ${
-                billingCycle === "monthly" 
-                  ? "bg-dlp-purple text-white" 
-                  : "text-gray-300 hover:text-white"
-              }`}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setBillingCycle("annual")}
-              className={`px-6 py-2 rounded-full text-sm flex items-center ${
-                billingCycle === "annual" 
-                  ? "bg-dlp-purple text-white" 
-                  : "text-gray-300 hover:text-white"
-              }`}
-            >
-              Annual
-              <span className="ml-1 bg-dlp-cyan text-black text-xs px-2 py-0.5 rounded">Save 10%</span>
-            </button>
-          </div>
-        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {plans.map((plan, index) => (
@@ -94,15 +66,14 @@ const Pricing = () => {
               <div className="mb-6">
                 <div className="flex items-end">
                   <span className="text-4xl font-bold">
-                    ${billingCycle === "monthly" ? plan.monthlyPrice : plan.annualPrice}
+                    ${plan.price}
                   </span>
-                  <span className="text-gray-400 ml-1">/month</span>
                 </div>
               </div>
               
               <ul className="mb-8 space-y-3">
                 {features.map((feature) => {
-                  const isIncluded = plan.name === "Basic" 
+                  const isIncluded = plan.name === "One Time Setup Fee + 25% Revenue Share" 
                     ? feature.basic 
                     : feature.premium;
                       
