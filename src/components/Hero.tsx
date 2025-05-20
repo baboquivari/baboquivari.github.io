@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center bg-dlp-dark">
+    <div className="relative min-h-screen flex items-center bg-dlp-dark pt-24 md:pt-0">
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,_rgba(110,68,255,0.15),_transparent_60%)]"></div>
         <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,_rgba(0,212,255,0.15),_transparent_60%)]"></div>
