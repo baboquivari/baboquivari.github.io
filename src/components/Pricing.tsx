@@ -9,7 +9,7 @@ interface PricingFeature {
 const Pricing = () => {
   const features: PricingFeature[] = [
     { name: "Lead Database Analysis", basic: true, premium: true },
-    { name: "Whatsapp or Email Campaign", basic: true, premium: true },
+    { name: "Whatsapp or Email AI-Powered Campaign", basic: true, premium: true },
     { name: "Personalized Outreach", basic: true, premium: true },
     { name: "Campaign Performance Dashboard", basic: true, premium: true },
     { name: "Human Handoff", basic: true, premium: true },
