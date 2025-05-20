@@ -15,21 +15,21 @@ const Testimonials = () => {
       author: "Jenna Armitage",
       position: "Senior Marketing Executive",
       company: "Invenia",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: ""
     },
     {
       quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $3,000 from previously unresponsive leads.",
       author: "Lina Tszyan",
       position: "Founder",
       company: "Hill Tribe Silver",
-      image: "https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: ""
     },
     {
       quote: "We had thousands of dead leads just gathering dust. DLP turned them into instant revenue, helping us close deals effortlessly.",
       author: "Dan Emmett",
       position: "Owner",
       company: "Yorkshire Electric Gates",
-      image: "https://images.pexels.com/photos/8350410/pexels-photo-8350410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      image: ""
     }
   ];
 
