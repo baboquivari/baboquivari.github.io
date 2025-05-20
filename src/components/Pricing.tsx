@@ -32,7 +32,7 @@ const Pricing = () => {
         <div className="flex justify-center">
           <div className="tech-card p-8 max-w-xl w-full border-dlp-purple border-2 relative overflow-visible">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-dlp-purple text-white text-sm font-bold py-1 px-4 rounded-full">
-              Revenue Guarantee
+              Zero Risk
             </div>
             
             <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
