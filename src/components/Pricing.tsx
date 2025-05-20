@@ -21,7 +21,7 @@ const Pricing = () => {
     name: "No Setup Fee + 25% Revenue Share",
     description: "Ideal for growing businesses with up to 15,000 dormant leads.",
     price: 0,
-    ctaText: "I want Dead Lead Phoenix",
+    ctaText: "Book a Demo",
   };
   
   return (
