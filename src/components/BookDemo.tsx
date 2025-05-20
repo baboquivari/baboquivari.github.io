@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button";
-
 const BookDemo = () => {
   return (
-    <div className="section bg-dlp-dark">
+    <div id="book-a-demo" className="section bg-dlp-dark">
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Book a Demo</h2>

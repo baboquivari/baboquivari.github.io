@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const ServiceExplanation = () => {
@@ -56,7 +55,7 @@ const ServiceExplanation = () => {
   ];
 
   return (
-    <div className="section bg-dlp-dark">
+    <div id="how-we-bring-leads-back" className="section bg-dlp-dark">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">How We Bring Leads Back to Life</h2>
         <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-16">
@@ -85,8 +84,11 @@ const ServiceExplanation = () => {
         </div>
         
         <div className="text-center">
-          <Button className="bg-dlp-purple hover:bg-dlp-purple/90 text-white py-6 px-8 rounded-md text-lg">
-            Get Your Free Lead Analysis
+          <Button 
+            onClick={() => document.querySelector('#book-a-demo')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-dlp-purple hover:bg-dlp-purple/90 text-white py-6 px-8 rounded-md text-lg"
+          >
+            Book Your Free Demo
           </Button>
         </div>
       </div>

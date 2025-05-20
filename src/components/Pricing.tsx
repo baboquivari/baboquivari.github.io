@@ -25,7 +25,7 @@ const Pricing = () => {
   };
   
   return (
-    <div className="section bg-dlp-darker">
+    <div id="simple-transparent-pricing" className="section bg-dlp-darker">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
         <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12">
@@ -76,6 +76,7 @@ const Pricing = () => {
             </ul>
             
             <Button 
+              onClick={() => document.querySelector('#book-a-demo')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full py-6 text-lg bg-dlp-purple hover:bg-dlp-purple/90"
             >
               {plan.ctaText}
