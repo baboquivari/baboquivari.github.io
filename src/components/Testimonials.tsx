@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 interface Testimonial {
   quote: string;
@@ -35,15 +35,6 @@ const Testimonials = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState<'left' | 'right'>('right');
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDirection('right');
-      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
 
   const handleNext = () => {
     setDirection('right');
