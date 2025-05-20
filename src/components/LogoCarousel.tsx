@@ -24,24 +24,29 @@ const LogoCarousel = () => {
     }
   ];
 
+  // Double the logos array to create a seamless loop
+  const allLogos = [...logos, ...logos];
+
   return (
-    <div className="bg-dlp-darker py-12">
+    <div className="bg-dlp-darker py-12 overflow-hidden">
       <div className="container mx-auto px-4">
         <h3 className="text-center text-lg text-gray-400 mb-8">Trusted by industry leaders</h3>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center max-w-4xl mx-auto">
-          {logos.map((logo, index) => (
-            <div 
-              key={index} 
-              className="flex items-center justify-center w-full"
-            >
-              <img 
-                src={logo.url}
-                alt={logo.name}
-                className={logo.className}
-              />
-            </div>
-          ))}
+        <div className="relative">
+          <div className="flex animate-scroll space-x-12 md:space-x-16">
+            {allLogos.map((logo, index) => (
+              <div 
+                key={`${logo.name}-${index}`}
+                className="flex-none animate-fade-in-out"
+              >
+                <img 
+                  src={logo.url}
+                  alt={logo.name}
+                  className={logo.className}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
