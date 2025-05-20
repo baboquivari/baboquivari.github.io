@@ -13,8 +13,8 @@ const Hero = () => {
           {/* Left Column - Text Content */}
           <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="block mb-2">Transform Dead Leads</span> 
-              <span className="text-gradient animate-glow">into Revenue — On Autopilot</span>
+              <span className="block mb-2">Transform Dead Leads Into Revenue</span> 
+              <span className="text-gradient animate-glow">— On Autopilot</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-xl mb-8">
