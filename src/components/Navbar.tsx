@@ -27,18 +27,26 @@ const Navbar = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-dlp-darker/90 backdrop-blur-md py-3 shadow-lg" : "bg-transparent py-6"}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
+          <button 
+            onClick={scrollToTop}
+            className="flex items-center focus:outline-none"
+          >
             <img 
               src="https://frost-lark-9ff.notion.site/image/attachment%3A799086c3-089e-4440-aba5-69634d9a5df0%3Adead_lead_phoenix_logo_blue_transparent.png?table=block&id=1f9412d3-850f-8075-bc6b-e2dcad9bdc8a&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2" 
               alt="Dead Lead Phoenix Logo"
               className="h-12 md:h-14 w-auto object-contain"
             />
-          </div>
+          </button>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
