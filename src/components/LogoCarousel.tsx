@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 
 const LogoCarousel = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const logos = [
     {
       url: "https://frost-lark-9ff.notion.site/image/attachment%3A80ad724d-0cf7-443b-905f-ebb97dbe793f%3Ahilltribe-logo-no-bg.png?table=block&id=1f9412d3-850f-806c-820f-ca9821b539be&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2",
@@ -32,7 +38,10 @@ const LogoCarousel = () => {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="flex-shrink-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
+                style={{
+                  animation: isVisible ? `fadeIn 0.5s ease-out ${index * 200}ms forwards` : 'none'
+                }}
               >
                 <img
                   src={logo.url}
