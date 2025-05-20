@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Testimonial {
   quote: string;
@@ -34,6 +34,14 @@ const Testimonials = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
