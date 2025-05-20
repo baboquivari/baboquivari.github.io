@@ -68,7 +68,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500">
-            &copy; {currentYear} Dead Lead Phoenix. All rights reserved.
+            &copy; {currentYear} Dead Lead Phoenix. All rights reserved. Made by  <a href="https://www.tonisian.com" target="_blank" rel="noopener noreferrer">Toni Sian</a>
           </p>
         </div>
       </div>
