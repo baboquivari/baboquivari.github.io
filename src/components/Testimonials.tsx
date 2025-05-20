@@ -34,9 +34,11 @@ const Testimonials = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [direction, setDirection] = useState<'left' | 'right'>('right');
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setDirection('right');
       setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
     }, 5000);
 
@@ -44,10 +46,12 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   const handleNext = () => {
+    setDirection('right');
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
   const handlePrev = () => {
+    setDirection('left');
     setActiveIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
 
@@ -57,25 +61,44 @@ const Testimonials = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
         
         <div className="max-w-4xl mx-auto">
-          <div className="tech-card p-8 md:p-12 glow-border">
+          <div className="tech-card p-8 md:p-12 glow-border overflow-hidden">
             <div className="relative">
               <div className="absolute -top-6 -left-2 text-dlp-purple text-6xl opacity-30">"</div>
-              <p className="text-xl md:text-2xl italic text-gray-200 mb-8 relative z-10">
-                {testimonials[activeIndex].quote}
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full overflow-hidden bg-dlp-purple/30 flex items-center justify-center">
-                  <img 
-                    src={testimonials[activeIndex].image} 
-                    alt={testimonials[activeIndex].author}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="ml-4">
-                  <p className="font-bold">{testimonials[activeIndex].author}</p>
-                  <p className="text-gray-400">
-                    {testimonials[activeIndex].position}, {testimonials[activeIndex].company}
-                  </p>
+              <div 
+                key={activeIndex}
+                className={`relative z-10 transform transition-all duration-500 ${
+                  direction === 'right' 
+                    ? 'animate-[slide-in-right_0.5s_ease-out]' 
+                    : 'animate-[slide-in-left_0.5s_ease-out]'
+                }`}
+                style={{
+                  '@keyframes slide-in-right': {
+                    '0%': { transform: 'translateX(100%)', opacity: 0 },
+                    '100%': { transform: 'translateX(0)', opacity: 1 }
+                  },
+                  '@keyframes slide-in-left': {
+                    '0%': { transform: 'translateX(-100%)', opacity: 0 },
+                    '100%': { transform: 'translateX(0)', opacity: 1 }
+                  }
+                }}
+              >
+                <p className="text-xl md:text-2xl italic text-gray-200 mb-8">
+                  {testimonials[activeIndex].quote}
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-dlp-purple/30 flex items-center justify-center">
+                    <img 
+                      src={testimonials[activeIndex].image} 
+                      alt={testimonials[activeIndex].author}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="ml-4">
+                    <p className="font-bold">{testimonials[activeIndex].author}</p>
+                    <p className="text-gray-400">
+                      {testimonials[activeIndex].position}, {testimonials[activeIndex].company}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
