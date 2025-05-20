@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 interface FAQItem {
   question: string;
@@ -77,15 +76,6 @@ const FAQ = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <Button 
-            onClick={() => document.querySelector('#book-a-demo')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-dlp-purple hover:bg-dlp-purple/90 text-white py-6 px-8 rounded-md text-lg"
-          >
-            Book a Demo
-          </Button>
         </div>
       </div>
     </div>
