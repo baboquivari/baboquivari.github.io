@@ -2,28 +2,28 @@ const LogoCarousel = () => {
   const logos = [
     {
       name: "Hill Tribe Silver Jewelry",
-      url: "https://images.pexels.com/photos/hilltribe.png",
-      className: "w-32 opacity-50 hover:opacity-100 transition-opacity"
+      url: "/lovable-uploads/hilltribe.png",
+      className: "w-32 brightness-[.6] hover:brightness-100 transition-all"
     },
     {
       name: "Accela Sales Training",
-      url: "https://images.pexels.com/photos/accela.png",
-      className: "w-40 opacity-50 hover:opacity-100 transition-opacity"
+      url: "/lovable-uploads/accela.png",
+      className: "w-40 brightness-[.6] hover:brightness-100 transition-all"
     },
     {
       name: "Cisive",
-      url: "https://images.pexels.com/photos/cisive.png",
-      className: "w-36 opacity-50 hover:opacity-100 transition-opacity"
+      url: "/lovable-uploads/cisive.png",
+      className: "w-36 brightness-[.6] hover:brightness-100 transition-all"
     },
     {
       name: "Invenia",
-      url: "https://images.pexels.com/photos/invenia.png",
-      className: "w-36 opacity-50 hover:opacity-100 transition-opacity"
+      url: "/lovable-uploads/invenia.png",
+      className: "w-36 brightness-[.6] hover:brightness-100 transition-all"
     },
     {
-      name: "Revios",
-      url: "https://images.pexels.com/photos/revios.png", 
-      className: "w-32 opacity-50 hover:opacity-100 transition-opacity"
+      name: "Yorkshire Electric Gates",
+      url: "/lovable-uploads/yorkshire.png", 
+      className: "w-32 brightness-[.6] hover:brightness-100 transition-all"
     }
   ];
 
