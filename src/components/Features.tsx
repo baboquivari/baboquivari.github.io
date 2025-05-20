@@ -1,4 +1,3 @@
-
 import { 
   Database, 
   Star, 
@@ -54,17 +53,18 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="flex flex-col rounded-lg overflow-hidden border border-gray-800"
+              className="tech-card relative overflow-hidden border border-gray-800 bg-gradient-to-br from-gray-900 to-dlp-darker"
             >
-              <div className="bg-dlp-dark p-6 border-b border-gray-800" style={{ backgroundImage: "linear-gradient(45deg, rgba(30, 41, 59, 0.2) 1px, transparent 1px)", backgroundSize: "20px 20px" }}>
+              <div className="absolute inset-0 bg-gradient-to-r from-dlp-purple/10 to-dlp-cyan/10 opacity-20"></div>
+              <div className="bg-dlp-dark/50 p-6 border-b border-gray-800" style={{ backgroundImage: "linear-gradient(45deg, rgba(30, 41, 59, 0.2) 1px, transparent 1px)", backgroundSize: "20px 20px" }}>
                 <div className="flex items-center">
                   <div className="bg-dlp-dark/80 p-4 rounded-lg mr-4">
                     {feature.icon}
                   </div>
-                  <h3 className="text-xl font-bold">{feature.title}</h3>
+                  <h3 className="text-xl font-bold text-dlp-purple">{feature.title}</h3>
                 </div>
               </div>
-              <div className="bg-dlp-dark p-6 flex-grow">
+              <div className="bg-transparent p-6 flex-grow relative z-10">
                 <p className="text-gray-300">{feature.description}</p>
               </div>
             </div>
