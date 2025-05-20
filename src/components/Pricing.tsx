@@ -68,6 +68,9 @@ const Pricing = () => {
                   <span className="text-4xl font-bold">
                     ${plan.price}
                   </span>
+                  {plan.price === 500 && (
+                    <span className="text-gray-400 ml-2 text-sm">with refund guarantee</span>
+                  )}
                 </div>
               </div>
               
