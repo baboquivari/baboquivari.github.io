@@ -27,10 +27,7 @@ const Pricing = () => {
   return (
     <div id="simple-transparent-pricing" className="section bg-dlp-darker">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
-        <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12">
-          Choose the plan that fits your needs. All plans include our core lead resurrection technology.
-        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Simple, Transparent Pricing</h2>
         
         <div className="flex justify-center">
           <div className="tech-card p-8 max-w-xl w-full border-dlp-purple border-2 relative overflow-visible">
