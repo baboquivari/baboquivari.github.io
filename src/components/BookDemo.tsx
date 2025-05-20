@@ -4,7 +4,7 @@ const BookDemo = () => {
   return (
     <div className="section bg-dlp-dark">
       <div className="container mx-auto">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Book a Demo</h2>
           <p className="text-xl text-gray-300 mb-8">
             See how Dead Lead Phoenix can transform your dormant leads into revenue
