@@ -67,23 +67,21 @@ const SocialProof = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           <div className="tech-card p-8 text-center">
-            <div className="text-4xl md:text-5xl font-bold text-gradient animate-glow">
-              30-50%
-            </div>
+            <Counter end={40} suffix="%" prefix="30-" />
             <p className="mt-4 text-gray-300 text-lg">
               Average response rates
             </p>
           </div>
           
           <div className="tech-card p-8 text-center">
-            <span className="text-4xl md:text-5xl font-bold text-gradient animate-glow">3x</span>
+            <Counter end={3} suffix="x" delay={200} />
             <p className="mt-4 text-gray-300 text-lg">
               Average ROI
             </p>
           </div>
           
           <div className="tech-card p-8 text-center">
-            <Counter end={25} suffix="%" delay={600} />
+            <Counter end={25} suffix="%" delay={400} />
             <p className="mt-4 text-gray-300 text-lg">
               Uplift in sales qualified leads
             </p>
