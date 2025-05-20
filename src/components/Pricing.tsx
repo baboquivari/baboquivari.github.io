@@ -15,7 +15,7 @@ const Pricing = () => {
     { name: "Campaign Performance Dashboard", basic: true, premium: true },
     { name: "Human Handoff", basic: true, premium: true },
     { name: "25% revenue share on cash collected (1st invoice only)", basic: true, premium: true },
-    { name: "Guaranteed refund of setup fee if service doesn't recover at least $500 in 45 days", basic: true, premium: true },
+    { name: "Guaranteed refund of setup fee if service doesn't recover at least $995 in 45 days", basic: true, premium: true },
     { name: "We cover all expenses: send credits, system costs, campaign tech — no hidden costs", basic: true, premium: true },
   ];
 
@@ -23,7 +23,7 @@ const Pricing = () => {
     {
       name: "One Time Setup Fee + 25% Revenue Share",
       description: "Teams that want skin in the game and a hard ROI guarantee.",
-      price: 500,
+      price: 995,
       ctaText: "Start Basic",
       highlighted: false,
     },
@@ -68,7 +68,7 @@ const Pricing = () => {
                   <span className="text-4xl font-bold">
                     ${plan.price}
                   </span>
-                  {plan.price === 500 && (
+                  {plan.price === 995 && (
                     <span className="text-gray-400 ml-2 text-sm">with refund guarantee</span>
                   )}
                 </div>
