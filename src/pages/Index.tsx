@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import LogoCarousel from "../components/LogoCarousel";
 import SocialProof from "../components/SocialProof";
 import Testimonials from "../components/Testimonials";
+import Features from "../components/Features";
 import ServiceExplanation from "../components/ServiceExplanation";
 import Pricing from "../components/Pricing";
 import Footer from "../components/Footer";
@@ -16,6 +17,7 @@ const Index = () => {
       <LogoCarousel />
       <SocialProof />
       <Testimonials />
+      <Features />
       <ServiceExplanation />
       <Pricing />
       <Footer />
