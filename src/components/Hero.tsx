@@ -182,6 +182,36 @@ const Hero = () => {
                     </div>
                     <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
                   </div>
+
+                  {/* Regular Row */}
+                  <div className="h-8 flex gap-[2px] opacity-40">
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                    <div className="w-1/4 h-full bg-gray-700/30 rounded"></div>
+                  </div>
+
+                  {/* Active Row 9 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '4.5s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$7,900</span>
+                    </div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
+
+                  {/* Active Row 10 */}
+                  <div className="h-8 flex gap-[2px] items-center animate-pulse" style={{ animationDelay: '5s' }}>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded flex items-center justify-center">
+                      <span className="text-emerald-400 text-sm font-mono">$3,400</span>
+                    </div>
+                    <div className="w-1/4 h-full bg-emerald-500/20 rounded"></div>
+                  </div>
+
+                  
                 </div>
               </div>
 
