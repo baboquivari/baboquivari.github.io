@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -27,8 +26,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/c50aa04b-4317-453d-bff2-7018bafc3c72.png" 
-              alt="Dead Lead Phoenix Logo" 
-              className="h-12 md:h-14"
+              alt="Dead Lead Phoenix Logo"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </div>
           
