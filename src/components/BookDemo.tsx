@@ -4,8 +4,11 @@ const BookDemo = () => {
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Book a Demo</h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-300 mb-4">
             See how Dead Lead Phoenix can transform your dormant leads into revenue
+          </p>
+          <p className="text-lg text-dlp-cyan mb-8">
+            Or reach out directly: toni@deadleadphoenix.com
           </p>
           
           <div className="tech-card p-8 relative">
