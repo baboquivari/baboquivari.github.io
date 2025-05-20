@@ -18,7 +18,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-xl mb-8">
-              AI-powered reactivation campaigns on autopilot. Turn dead leads into revenue.
+              AI-powered reactivation campaigns on autopilot. Turn dead leads into fresh revenue.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
