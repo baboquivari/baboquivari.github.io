@@ -30,6 +30,13 @@ const Footer = () => {
                   <circle cx="4" cy="4" r="2"/>
                 </svg>
               </a>
+              <a href="https://www.tonisian.com" className="text-gray-400 hover:text-dlp-cyan transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="2" y1="20" x2="22" y2="20"/>
+                  <line x1="7" y1="23" x2="17" y2="23"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
