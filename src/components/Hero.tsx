@@ -13,8 +13,8 @@ const Hero = () => {
           {/* Left Column - Text Content */}
           <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="block mb-2">Resurrect Your</span> 
-              <span className="text-gradient animate-glow">Dead Leads</span>
+              <span className="block mb-2">Transform Dead Leads</span> 
+              <span className="text-gradient animate-glow">into Revenue — On Autopilot</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-xl mb-8">
@@ -23,10 +23,17 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-dlp-purple hover:bg-dlp-purple/90 text-white py-6 px-8 rounded-md text-lg">
-                Revive My Leads
+              <Button 
+                onClick={() => document.querySelector('#book-a-demo')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-dlp-purple hover:bg-dlp-purple/90 text-white py-6 px-8 rounded-md text-lg"
+              >
+                Book a Demo
               </Button>
-              <Button variant="outline" className="border-dlp-cyan text-dlp-cyan hover:bg-dlp-cyan/10 py-6 px-8 rounded-md text-lg">
+              <Button 
+                onClick={() => document.querySelector('#how-we-bring-leads-back')?.scrollIntoView({ behavior: 'smooth' })}
+                variant="outline" 
+                className="border-dlp-cyan text-dlp-cyan hover:bg-dlp-cyan/10 py-6 px-8 rounded-md text-lg"
+              >
                 See How It Works
               </Button>
             </div>
