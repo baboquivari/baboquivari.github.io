@@ -11,15 +11,11 @@ const FAQ = () => {
   const faqs: FAQItem[] = [
     {
       question: "How does the solution work?",
-      answer: "Our solution uses AI-powered voice technology to engage with customers and encourage them to re-purchase or re-engage with your business."
+      answer: "We use Whatsapp and Email text campaigns to re-engage your dead leads on autopilot. You need to collaborate a little at the start, to ensure Phoenix AI represents your company as you wish, but after that — it runs on autopilot"
     },
     {
       question: "How long does it take to see results?",
       answer: "Results can vary thats why we always do a free test run to see what performance is like."
-    },
-    {
-      question: "How much does the solution cost?",
-      answer: "Pricing varies depending on the specific use case and implementation. Its best to sit down with one of our team members to get an accurate cost"
     },
     {
       question: "Is my data secure?",
