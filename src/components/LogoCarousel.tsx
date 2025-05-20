@@ -3,27 +3,27 @@ const LogoCarousel = () => {
     {
       name: "Hill Tribe Silver Jewelry",
       url: "https://images.pexels.com/photos/hilltribe.png",
-      className: "w-32 brightness-0 opacity-50 hover:opacity-100 transition-opacity"
+      className: "w-32 opacity-50 hover:opacity-100 transition-opacity"
     },
     {
       name: "Accela Sales Training",
       url: "https://images.pexels.com/photos/accela.png",
-      className: "w-40 brightness-0 opacity-50 hover:opacity-100 transition-opacity"
+      className: "w-40 opacity-50 hover:opacity-100 transition-opacity"
     },
     {
       name: "Cisive",
       url: "https://images.pexels.com/photos/cisive.png",
-      className: "w-36 brightness-0 opacity-50 hover:opacity-100 transition-opacity"
+      className: "w-36 opacity-50 hover:opacity-100 transition-opacity"
     },
     {
       name: "Invenia",
       url: "https://images.pexels.com/photos/invenia.png",
-      className: "w-36 brightness-0 opacity-50 hover:opacity-100 transition-opacity"
+      className: "w-36 opacity-50 hover:opacity-100 transition-opacity"
     },
     {
       name: "Revios",
       url: "https://images.pexels.com/photos/revios.png", 
-      className: "w-32 brightness-0 opacity-50 hover:opacity-100 transition-opacity"
+      className: "w-32 opacity-50 hover:opacity-100 transition-opacity"
     }
   ];
 
