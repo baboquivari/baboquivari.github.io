@@ -13,13 +13,12 @@ const Hero = () => {
           {/* Left Column - Text Content */}
           <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="block mb-2">Transform Dead Leads Into Revenue</span> 
-              <span className="text-gradient animate-glow">— On Autopilot</span>
+              <span className="block mb-2 text-white">Hidden Revenue</span> 
+              <span className="text-dlp-purple">— Unlocked</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-xl mb-8">
-              We transform forgotten opportunities into your most valuable asset.
-              Unlock revenue that's already in your database.
+              AI-powered reactivation campaigns — on autopilot. Turn dead leads -> revenue.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
