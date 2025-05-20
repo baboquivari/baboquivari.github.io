@@ -73,7 +73,7 @@ const ServiceExplanation = () => {
                 <div className="mr-6 bg-dlp-purple/10 p-3 rounded-lg">{step.icon}</div>
                 <div>
                   <div className="flex items-center mb-2">
-                    <span className="text-dlp-cyan mr-3 text-sm font-semibold">STEP {step.id}</span>
+                    <span className="text-dlp-cyan mr-3 text-sm font-semibold hidden md:inline">STEP {step.id}</span>
                     <h3 className="text-xl font-bold">{step.title}</h3>
                   </div>
                   <p className="text-gray-300">{step.description}</p>
