@@ -14,8 +14,9 @@ const Pricing = () => {
     { name: "Personalized Outreach", basic: true, premium: true },
     { name: "Campaign Performance Dashboard", basic: true, premium: true },
     { name: "Human Handoff", basic: true, premium: true },
-    { name: "25% revenue share on cash collected (1st invoice only)", basic: true, premium: true },
-    { name: "Guaranteed refund of setup fee if service doesn't recover at least $995 in 45 days", basic: true, premium: true },
+    { name: "25% revenue share on cash collected (1st invoice only)", basic: true, premium: false },
+    { name: "35% revenue share on cash collected (1st invoice only)", basic: false, premium: true },
+    { name: "Guaranteed refund of setup fee if service doesn't recover at least $995 in 45 days", basic: true, premium: false },
     { name: "We cover all expenses: send credits, system costs, campaign tech — no hidden costs", basic: true, premium: true },
   ];
 
@@ -28,9 +29,9 @@ const Pricing = () => {
       highlighted: false,
     },
     {
-      name: "Premium",
+      name: "$0 Setup Fee + 35% Revenue Share",
       description: "Ideal for growing businesses with up to 15,000 dormant leads.",
-      price: 1997,
+      price: 0,
       ctaText: "Start Premium",
       highlighted: true,
     }
