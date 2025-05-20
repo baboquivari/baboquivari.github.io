@@ -18,7 +18,7 @@ const Testimonials = () => {
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-      quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $7,000 from previously unresponsive leads.",
+      quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $3,000 from previously unresponsive leads.",
       author: "Lina Tszyan",
       position: "Founder",
       company: "Hill Tribe Silver",
