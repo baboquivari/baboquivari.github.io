@@ -52,7 +52,7 @@ const Counter = ({ end, suffix = "", prefix = "", duration = 2000, delay = 0 }: 
 
   return (
     <div ref={counterRef} className="animate-count-up opacity-0">
-      <span className="text-4xl md:text-5xl font-bold text-gradient animate-glow">
+      <span className="text-4xl md:text-5xl font-bold text-dlp-purple">
         {prefix}${count.toLocaleString()}{suffix}
       </span>
     </div>
@@ -76,7 +76,7 @@ const SocialProof = () => {
           <div className="tech-card p-8 text-center">
             <Counter end={25} prefix="" suffix="" delay={200} />
             <p className="mt-4 text-gray-300 text-lg">
-              Cost Per Re-activated Dollar
+              Cost per re-activated dollar
             </p>
           </div>
           
