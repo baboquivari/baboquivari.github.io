@@ -11,7 +11,7 @@ interface Testimonial {
 const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
-      quote: "Dead Lead Phoenix reactivated leads we thought were gone for good. Sales jumped 35% in just six weeks!",
+      quote: "Dead Lead Phoenix reactivated leads we thought were gone for good. Sales jumped 35% in just six weeks.",
       author: "Jenna Armitage",
       position: "Senior Marketing Executive",
       company: "Invenia",
