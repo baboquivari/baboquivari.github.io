@@ -5,6 +5,7 @@ interface Testimonial {
   author: string;
   position: string;
   company: string;
+  image: string;
 }
 
 const Testimonials = () => {
@@ -13,19 +14,22 @@ const Testimonials = () => {
       quote: "Dead Lead Phoenix reactivated leads we thought were gone for good. Sales jumped 35% in just six weeks!",
       author: "Jenna Armitage",
       position: "Senior Marketing Executive",
-      company: "Invenia"
+      company: "Invenia",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $7,000 from previously unresponsive leads.",
       author: "Lina Tszyan",
       position: "Founder",
-      company: "Hill Tribe Silver"
+      company: "Hill Tribe Silver",
+      image: "https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       quote: "We had thousands of dead leads just gathering dust. DLP turned them into instant revenue, helping us close deals effortlessly.",
       author: "Dan Emmett",
       position: "Owner",
-      company: "Yorkshire Electric Gates"
+      company: "Yorkshire Electric Gates",
+      image: "https://images.pexels.com/photos/8350410/pexels-photo-8350410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
   ];
 
@@ -52,8 +56,12 @@ const Testimonials = () => {
                 {testimonials[activeIndex].quote}
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-dlp-purple/30 flex items-center justify-center">
-                  <span className="font-bold text-lg">{testimonials[activeIndex].author[0]}</span>
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-dlp-purple/30 flex items-center justify-center">
+                  <img 
+                    src={testimonials[activeIndex].image} 
+                    alt={testimonials[activeIndex].author}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="ml-4">
                   <p className="font-bold">{testimonials[activeIndex].author}</p>
