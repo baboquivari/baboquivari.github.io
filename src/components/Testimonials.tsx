@@ -1,45 +1,45 @@
-// import { useState } from "react";
+import { useState } from "react";
 
-// interface Testimonial {
-//   quote: string;
-//   author: string;
-//   position: string;
-//   company: string;
-//   image: string;
-// }
+interface Testimonial {
+  quote: string;
+  author: string;
+  position: string;
+  company: string;
+  image: string;
+}
 
-// const Testimonials = () => {
-//   const testimonials: Testimonial[] = [
-//     {
-//       quote: "Dead Lead Phoenix reactivated leads we thought were gone for good. Sales jumped 32% in just six weeks.",
-//       author: "Jenna Armitage",
-//       position: "Senior Marketing Executive",
-//       company: "Invenia",
-//       image: "https://frost-lark-9ff.notion.site/image/attachment%3A78dc01cf-6a21-4143-966d-226b00b24f8f%3Ajenna_invenia.jpeg?table=block&id=1f9412d3-850f-8044-98cf-ed8bdafdf4a9&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2"
-//     },
-//     {
-//       quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $3,000 from previously unresponsive leads.",
-//       author: "Lina Tszyan",
-//       position: "Founder",
-//       company: "Hill Tribe Silver",
-//       image: "https://frost-lark-9ff.notion.site/image/attachment%3A86fcd9f2-81eb-419f-b220-2eb10f9295f7%3Alina-beautiful-500-cmprs.png?table=block&id=1f9412d3-850f-80eb-b9fd-d91f42125cb1&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1000&userId=&cache=v2"
-//     },
-//     {
-//       quote: "We had thousands of dead leads just gathering dust. DLP turned them into instant revenue, helping us close deals effortlessly.",
-//       author: "Dan Emmett",
-//       position: "Owner",
-//       company: "Yorkshire Electric Gates",
-//       image: "https://frost-lark-9ff.notion.site/image/attachment%3A72b784cf-597f-42cd-9416-add5b1c0a0f5%3Adan_emmett.png?table=block&id=1f9412d3-850f-80d6-8ed3-ff40ac02608d&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2"
-//     }
-//   ];
+const Testimonials = () => {
+  const testimonials: Testimonial[] = [
+    {
+      quote: "Dead Lead Phoenix reactivated leads we thought were gone for good. Sales jumped 32% in just six weeks.",
+      author: "Jenna Armitage",
+      position: "Senior Marketing Executive",
+      company: "Invenia",
+      image: "https://frost-lark-9ff.notion.site/image/attachment%3A78dc01cf-6a21-4143-966d-226b00b24f8f%3Ajenna_invenia.jpeg?table=block&id=1f9412d3-850f-8044-98cf-ed8bdafdf4a9&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2"
+    },
+    {
+      quote: "The simplicity and effectiveness blew us away. Within one month, we saw over $3,000 from previously unresponsive leads.",
+      author: "Lina Tszyan",
+      position: "Founder",
+      company: "Hill Tribe Silver",
+      image: "https://frost-lark-9ff.notion.site/image/attachment%3A86fcd9f2-81eb-419f-b220-2eb10f9295f7%3Alina-beautiful-500-cmprs.png?table=block&id=1f9412d3-850f-80eb-b9fd-d91f42125cb1&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1000&userId=&cache=v2"
+    },
+    {
+      quote: "We had thousands of dead leads just gathering dust. DLP turned them into instant revenue, helping us close deals effortlessly.",
+      author: "Dan Emmett",
+      position: "Owner",
+      company: "Yorkshire Electric Gates",
+      image: "https://frost-lark-9ff.notion.site/image/attachment%3A72b784cf-597f-42cd-9416-add5b1c0a0f5%3Adan_emmett.png?table=block&id=1f9412d3-850f-80d6-8ed3-ff40ac02608d&spaceId=65003a87-77d5-4e87-85b8-4cea37d670eb&width=1420&userId=&cache=v2"
+    }
+  ];
 
-//   const [activeIndex, setActiveIndex] = useState(0);
-//   const [direction, setDirection] = useState<'left' | 'right'>('right');
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [direction, setDirection] = useState<'left' | 'right'>('right');
 
-//   const handleNext = () => {
-//     setDirection('right');
-//     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-//   };
+  const handleNext = () => {
+    setDirection('right');
+    setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
 
 //   const handlePrev = () => {
 //     setDirection('left');
