@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import SocialProof from "../components/SocialProof";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 import Features from "../components/Features";
 import ServiceExplanation from "../components/ServiceExplanation";
 import Pricing from "../components/Pricing";
